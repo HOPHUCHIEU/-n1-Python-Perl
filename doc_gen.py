@@ -7,7 +7,7 @@ invoice_list = [[2, "pen", 0.5, 1],
                 [4, "eraser", 0.75, 3],
                 [5, "ruler", 1.00, 4]]
 
-doc.render({"name":"john",
+doc.render({"name":"pandora",
             "phone":"999999999",
             "invoice_list": invoice_list,
             "subtotal": 10,

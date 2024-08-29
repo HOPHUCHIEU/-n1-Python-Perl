@@ -52,8 +52,8 @@ def generate_invoice():
 
     doc_name = "new_invoice" + name + datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S") + ".docx"
     doc.save(doc_name)
-
-    messagebox.showinfo("Invoice Complete", "Invoice Complete")
+    #tạo thông báo in hóa đơn ra
+    messagebox.showinfo("Thông báo", "Tạo hóa đơn thành công")
     new_invoice()
 
 window = tkinter.Tk()
@@ -99,10 +99,10 @@ add_item_button.grid(row=4, column=2, pady=5)
 
 columns = ('qty', 'desc', 'price', 'total')
 tree = ttk.Treeview(frame, columns= columns, show="headings")
-tree.heading('qty', text="Qty")
-tree.heading('desc', text='Description')
-tree.heading('price', text='Unit Price')
-tree.heading('total', text='Total')
+tree.heading('qty', text="Số Lượng")
+tree.heading('desc', text='Tên Sản Phẩm')
+tree.heading('price', text='Đơn vị giá')
+tree.heading('total', text='Tổng')
 
 tree.grid(row=5, column=0, columnspan=3, padx=20, pady=10)
 
